@@ -1,0 +1,39 @@
+# == Schema Information
+#
+# Table name: categories
+#
+#  id         :bigint           not null, primary key
+#  name       :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+fakeid:
+  name: Fakeid
+  
+smartphones:
+  name: Smartphones
+
+consoles:
+  name: Consoles
+
+videogames:
+  name: Videojuegos
+
+computers:
+  name: Computers
+
+cars:
+  name: Coches
+
+music:
+  name: Música
+
+electronic:
+  name: Electrónica
+
+books:
+  name: Libros
+
+sports:
+  name: Deportes

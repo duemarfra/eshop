@@ -1,0 +1,7 @@
+<%= link_to item_path(item), class: "item", "data-turbo-frame": "_top" do %>
+
+    <h3><%= item.name %></h3>
+    <%= image_tag item.photo if item.photo.attached? %>
+    <p>$<%= item.price %></p>
+    
+<% end %>

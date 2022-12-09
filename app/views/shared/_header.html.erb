@@ -1,0 +1,16 @@
+<%= link_to items_path do %>
+    <h1><%= t("app_name") %></h1>
+<% end %>
+<%= link_to t(".add"), new_item_path if Current.user&.business? %>
+<%= link_to t(".my_items"), user_path(Current.user.username) if Current.user&.business? %>
+<%= link_to t(".favorites"), favorites_path if Current.user&.customer? %>
+<%= link_to t(".shoppings"), shoppings_path if Current.user&.customer? %>
+<%= link_to t(".sales"), shoppings_sale_path if Current.user&.business? %>
+<%= link_to t(".categories"), categories_path if Current.user&.admin? %>
+<%= link_to t(".users_list"), admins_path if Current.user&.admin? %>
+<%= link_to t(".login"), new_session_path unless Current.user %>
+<%= link_to t(".register"), new_user_path unless Current.user %>
+<%= link_to t(".logout"), session_path(Current.user.id), data: {
+                                                           turbo_method: :delete,
+                                                           turbo_confirm: t("common.confirm"),
+                                                         } if Current.user %>

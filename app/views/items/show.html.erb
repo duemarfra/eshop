@@ -1,0 +1,22 @@
+<h2 class= "name" ><%= @item.name %></h2>
+<p><%= @item.id %></p>
+
+<%= image_tag @item.photo if @item.photo.attached? %>
+
+<p class= "description" ><%= @item.description %></p>
+
+<% # @item.category_id %>
+
+<p class= "price" >$<%= @item.price %></p>
+
+<%= link_to t(".edit"), edit_item_path(@item) if @item.owner? %>
+
+<%= link_to t(".delete"), item_path(@item), data: {
+                                              turbo_method: :delete,
+                                              turbo_confirm: t("common.confirm"),
+                                            } if @item.owner? %>
+
+<%= link_to t(".view_more_products", username: @item.user.username), user_path(@item.user.username) %>
+
+<%= render partial: "favorite", locals: { item: @item } %>
+<%= render partial: "shopping", locals: { item: @item } %>

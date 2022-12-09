@@ -1,0 +1,19 @@
+<%= turbo_frame_tag "home" do %>
+    <h2><%= t(".title") %></h2>
+    <%= form_with url: items_path, method: :get do |form| %>
+
+        <%= form.text_field :query_text, placeholder: t(".query_text"), onChange: "this.form.requestSubmit()", value: params[:query_text] %>    
+        <%= form.number_field :min_price, placeholder: t(".min_price"), onChange: "this.form.requestSubmit()", value: params[:min_price] %>
+        <%= form.number_field :max_price, placeholder: t(".max_price"), onChange: "this.form.requestSubmit()", value: params[:max_price] %>
+        <%= form.select :order_by, options_for_select(Item::ORDER_BY.keys.map { |order| [t(".#{order}"), order] }, params[:order_by]), {}, { onChange: "this.form.requestSubmit()" } %>
+        
+    <% end %>
+    <%= link_to t(".all"), items_path %>
+    <%= render partial: "category", collection: @categories %>
+    <%= turbo_frame_tag :items do %>
+        <%= turbo_frame_tag "items-#{@pagy.page}", class: "items" do %>
+            <%= render partial: "item", collection: @items %>
+            <%= turbo_frame_tag "items-#{@pagy.next}", class: "producs", src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+        <% end %>
+    <% end %>
+<% end %>

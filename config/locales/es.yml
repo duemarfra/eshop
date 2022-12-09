@@ -1,0 +1,123 @@
+es:
+  app_name: 'E-Kiosco'
+  meta_title: 'La mejor tienda en linea'
+  activerecord:
+    models:
+      items: Producto
+      user: Usuario
+      category: Categoria
+    attributes:
+      item:
+        name: 'Nombre'
+        description: 'Descripcion' 
+        price: 'Precio'
+        photo: 'Foto'
+      user:
+        email: 'Correo Electrónico'
+        username: 'Nombre de Usuario'
+        password: 'Contraseña'
+      category:
+        name: 'Nombre'
+    #* errors valid only for other language different of english
+    errors:
+      models:
+        item:
+          attributes:
+            name:
+              blank: 'No puede estar en blanco'
+            description:
+              blank: 'No puede estar en blanco'
+            price:
+              blank: 'No puede estar en blanco'
+
+  common:
+    confirm: 'Estás seguro?'
+    back: 'Atrás'
+    not_logged_in: 'Tienes que iniciar secion o crearte una cuenta'
+    not_authorized: 'Acceso denegado! No tienes permisos para realizar esta accion.'
+    not_found: 'Usuario no encontrado!'
+
+  shared:
+    header:
+      add: 'Añadir un item'
+      categories: 'Categorías'
+      login: 'Inicio de sesión'
+      register: 'Registro'
+      logout: 'Salir'
+      favorites: 'Mis Favoritos'
+      my_items: 'Mis items publicados'
+      shoppings: 'Mis compras'
+      sales: 'Mis ventas'
+  
+  authentication:
+    users:
+      create:
+        created: 'Tu cuenta ah sido creada exitosamente!'
+    sessions:
+      create:
+        created: 'Bienbenid@!'
+        failed: 'Usuario o contraseña incorrectos!'
+      destroy:
+        destroyed: 'Saliste de sesion, Adios!'
+
+  items:
+    edit:
+      title: 'Editar producto'
+    new:
+      title: 'Nuevo producto'
+    index:
+      title: 'Productos'
+      all: 'Todos los productos'
+      min_price: 'Precio mínimo'
+      max_price: 'Precio máximo'
+      query_text: 'Buscar producto'
+      newest: 'Recientes' 
+      expensive: 'El más caro'
+      cheapest: 'El más barato'
+    show:
+      edit: 'Editar producto'
+      delete: 'Eliminar producto'
+      view_more_products: 'Ver más productos de %{username}'
+    create:
+      created: 'Producto creado correctamente'
+    update:  
+      updated: 'Producto actualizado correctamente'
+    destroy:  
+      destroyed: 'Producto eliminado correctamente'
+
+  categories:
+    category:
+      edit: 'Editar'
+      delete: 'Eliminar'
+    index:
+      title: 'Categorías'
+      new: 'Añadir categoría'
+    edit:
+      title: 'Editar categoría'
+    new:
+      title: 'Nueva categoría'
+    create:
+      created: 'Categoría creada correctamente'
+    update:  
+      updated: 'Categoría actualizada correctamente'
+    destroy:  
+      destroyed: 'Categoría eliminada correctamente'
+
+  favorites:
+    index:
+      title: 'Mis favoritos'
+
+  shoppings:
+    index:
+      title: 'Mis compras'
+    sale:
+      title: 'Productos vendidos'
+  
+  admins:
+    index:
+      title: 'Lista de usuarios'
+    show:
+      edit: 'Editar'
+      delete: 'Eliminar'
+    edit:
+      title: 'Editar usuario'

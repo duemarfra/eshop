@@ -1,0 +1,11 @@
+<div id="favorite">
+    <% if item.favorite %>
+    <%= link_to "❤️", favorite_path(item.id), data: {
+                                                turbo_method: :delete,
+                                              } if Current.user&.customer? %>
+    <% else %>
+    <%= link_to "🖤", favorites_path(item_id: item.id), data: {
+                                                         turbo_method: :post,
+                                                       } if Current.user&.customer? %>
+    <% end %>
+</div>

@@ -1,0 +1,7 @@
+<h1><%= t(".title") %> <%= @user.username %></h1>
+
+<%= render "form", user: @user %>
+
+<div>
+  <%= link_to t("common.back"), admins_path %>
+</div>

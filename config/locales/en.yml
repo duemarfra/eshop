@@ -1,0 +1,124 @@
+en:
+  app_name: 'E-Shop'
+  meta_title: 'The Best Store Online'
+  activerecord:
+    models:
+      items: Item
+      user: User
+      category: Category
+    attributes:
+      item:
+        name: 'Name'
+        description: 'Description' 
+        price: 'Price'
+        photo: 'Photo'
+      user:
+        email: 'Email'
+        username: 'Username'
+        password: 'Password'
+      category:
+        name: 'Name'
+    #* errors valid only for other language different of english
+    # errors:
+    #   models:
+    #     item:
+    #       attributes:
+    #         name:
+    #           blank: 'can't be blank'
+    #         description:
+    #           blank: 'can't be blank'
+    #         price:
+    #           blank: 'can't be blank'
+
+  common:
+    confirm: 'Are you sure?'
+    back: 'Go back'
+    not_logged_in: 'You have to login or create an account'
+    not_authorized: 'Access denied! You do not have permission to perform this action.'
+    not_found: 'User not found!'
+
+  shared:
+    header:
+      add: 'Add a Item'
+      categories: 'Categories'
+      login: 'Login'
+      register: 'Register'
+      logout: 'Logout'
+      favorites: 'My Favorites'
+      my_items: 'My published items'
+      shoppings: 'My shoppings'
+      sales: 'My sales'
+  
+  authentication:
+    users:
+      create:
+        created: 'Your account has been successfully created!'
+    sessions:
+      create:
+        created: 'Welcome!'
+        failed: 'User or password incorrect!'
+      destroy:
+        destroyed: 'Your session is ended, Bye!'
+
+  items:
+    edit:
+      title: 'Edit Item'
+    new:
+      title: 'New Item'
+    index:
+      title: 'Items'
+      all: 'All items'
+      min_price: 'Min Price'
+      max_price: 'Max Price'
+      query_text: 'Search item'
+      newest: 'Newest' 
+      expensive: 'Expensive'
+      cheapest: 'Cheapest'
+    show:
+      edit: 'Edit item'
+      delete: 'Delete item'
+      view_more_products: 'View more products by %{username}'
+    create:
+      created: 'Your item was saved successfully'
+    update:  
+      updated: 'Your item was updated successfully'
+    destroy:  
+      destroyed: 'Your item was deleted successfully'
+
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+      new: 'Add Category'
+    edit:
+      title: 'Edit category'
+    new:
+      title: 'New category'
+    create:
+      created: 'Your category was saved successfully'
+    update:  
+      updated: 'Your category was updated successfully'
+    destroy:  
+      destroyed: 'Your category was deleted successfully'
+
+  favorites:
+    index:
+      title: 'My Favorites'
+
+  shoppings:
+    index:
+      title: 'My Shops'
+      total: 'Total to pay'
+    sale:
+      title: 'My sales'
+  
+  admins:
+    index:
+      title: 'Users list'
+    show:
+      edit: 'Edit'
+      delete: 'Delete'
+    edit:
+      title: 'Edit user'

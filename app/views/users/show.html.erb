@@ -1,0 +1,3 @@
+<h3><%= @user.username %></h3>
+
+<%= turbo_frame_tag :items, src: items_path(user_id: @user.id) %>

@@ -1,0 +1,6 @@
+<h3><%= @user.username %></h3>
+<%= link_to t(".edit"), edit_admin_path(@user) %>
+<%= link_to t(".delete"), admin_path(@user), data: {
+                                               turbo_method: :delete,
+                                               turbo_confirm: t("common.confirm"),
+                                             } %>

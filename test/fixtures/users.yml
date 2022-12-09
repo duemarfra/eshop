@@ -1,0 +1,39 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint           not null, primary key
+#  admin           :boolean          default(FALSE)
+#  business        :boolean          default(FALSE)
+#  customer        :boolean          default(TRUE)
+#  email           :string           not null
+#  password_digest :string           not null
+#  username        :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+# Indexes
+#
+#  index_users_on_email     (email) UNIQUE
+#  index_users_on_username  (username) UNIQUE
+#
+
+alguien1:
+  email: alguien1@test.com
+  username: alguien1us
+  password_digest: <%= BCrypt::Password.create('testme', cost: 5) %>
+  admin: true
+  business: true
+  customer: true
+
+alguien2:
+  email: alguien2@test.com
+  username: alguien2us
+  password_digest: <%= BCrypt::Password.create('testme', cost: 5) %>
+  business: true
+  customer: false
+
+alguien3:
+  email: alguien3@test.com
+  username: alguien3us
+  password_digest: <%= BCrypt::Password.create('testme', cost: 5) %>
