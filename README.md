@@ -1,24 +1,50 @@
-# README
+# E-shop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+It's an application to buy and sell items online.
 
-* Ruby version
+It is also a mecaris ruby on rails bootcamp assignment, more details of the assignment are in the "public/mecaris" folder, where the class diagram is also located.
 
-* System dependencies
+* Ruby version: "3.1.2"
 
-* Configuration
+* Rails version: "7.0.4"
 
-* Database creation
+* Database creation: "postgres"
 
-* Database initialization
+View Gemfile for more details the project
 
-* How to run the test suite
+## Use
 
-* Services (job queues, cache servers, search engines, etc.)
+run:
 
-* Deployment instructions
+* start the server in localhost:3000
 
-* ...
+        rails s
+
+* load the test records into the dev table
+
+        rails db:fixtures:load
+
+* reset all tables in database
+
+        rails db:reset
+        
+
+## Links of interest
+
+* Repo
+
+        https://github.com/duemarfra/eshop.git
+
+* Hosted on Railway (main host)
+
+        https://eshop-production-f941.up.railway.app/
+
+* Hosted on Fly.io (old version)
+
+        https://eshop-flyio.fly.dev/
+
+* My host usage tutorial
+
+        https://www.youtube.com/watch?v=0mXuGZviVt0
