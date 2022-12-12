@@ -12,6 +12,8 @@ It is also a mecaris ruby on rails bootcamp assignment, more details of the assi
 
 * Database creation: "postgres"
 
+* Lenguage support: English, Spanish
+
 View Gemfile for more details the project
 
 ## Use
@@ -29,7 +31,20 @@ run:
 * reset all tables in database
 
         rails db:reset
-        
+
+NOTE: ALL NEW USERS HAVE ONLY THE CLIENTS OPTION ENABLED, IF YOU WANT TO TRY AN...
+
+* ADMIN ACCOUNT
+        user: alguien1@test.com
+        pass: testme
+
+* BISNESS ACCOUNT
+        user: alguien2@test.com
+        pass: testme
+
+* CUSTOMER ACCOUNT
+        user: alguien3@test.com
+        pass: testme
 
 ## Links of interest
 

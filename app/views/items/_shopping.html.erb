@@ -2,10 +2,12 @@
     <% if item.shopping %>
     <%= link_to "❌", shopping_path(item.id), data: {
                                                turbo_method: :delete,
+                                               turbo_confirm: t("common.unbuy")
                                              } if Current.user&.customer? %>
     <% else %>
     <%= link_to "🛒", shoppings_path(item_id: item.id), data: {
                                                          turbo_method: :post,
+                                                         turbo_confirm: t("common.buy"),
                                                        } if Current.user&.customer? %>
     <% end %>
 </div>

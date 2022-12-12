@@ -36,6 +36,8 @@ en:
     not_logged_in: 'You have to login or create an account'
     not_authorized: 'Access denied! You do not have permission to perform this action.'
     not_found: 'User not found!'
+    buy: 'buy this product?'
+    unbuy: 'cancel buy?'
 
   shared:
     header:
