@@ -48,3 +48,15 @@ run:
 * My host usage tutorial
 
         https://www.youtube.com/watch?v=0mXuGZviVt0
+
+* Class diagram
+
+        https://eshop-production-f941.up.railway.app/mecaris/clases.pdf
+
+* Report of hosts
+
+        https://eshop-production-f941.up.railway.app/mecaris/informeHosts.pdf
+
+* Tasks
+
+        https://eshop-production-f941.up.railway.app/mecaris/mecarisTpFinal.pdf
