@@ -1,7 +1,11 @@
-<%= link_to item_path(item), class: "item", "data-turbo-frame": "_top" do %>
+<%= link_to item_path(item), class: "item bg-white mb-2 rounded sm:w-[calc(33.33333%_-_.5rem)] lg:w-[calc(25%_-_.5rem)]", "data-turbo-frame": "_top" do %>
 
-    <h3><%= item.name %></h3>
-    <%= image_tag item.photo if item.photo.attached? %>
-    <p>$<%= item.price %></p>
+    <%= image_tag item.photo.attached? ? item.photo : "placeholder.jpg", class: "w-full h-60 object-cover" %>
+    
+    <div class="m-2">
+        <p class="font-bold text-xl">$<%= item.price %></p>
+        <h3 class=""><%= item.name %></h3>
+        <p class="text-gray-500 text-sm mt-2"><%= item.description %></p>
+    </div>
     
 <% end %>

@@ -1,19 +1,26 @@
 <%= turbo_frame_tag "home" do %>
-    <h2><%= t(".title") %></h2>
+
     <%= form_with url: items_path, method: :get do |form| %>
 
-        <%= form.text_field :query_text, placeholder: t(".query_text"), onChange: "this.form.requestSubmit()", value: params[:query_text] %>    
-        <%= form.number_field :min_price, placeholder: t(".min_price"), onChange: "this.form.requestSubmit()", value: params[:min_price] %>
-        <%= form.number_field :max_price, placeholder: t(".max_price"), onChange: "this.form.requestSubmit()", value: params[:max_price] %>
-        <%= form.select :order_by, options_for_select(Item::ORDER_BY.keys.map { |order| [t(".#{order}"), order] }, params[:order_by]), {}, { onChange: "this.form.requestSubmit()" } %>
+        <%= form.text_field :query_text, placeholder: t(".query_text"), onChange: "this.form.requestSubmit()", value: params[:query_text], class: "w-full my-2 rounded-2xl border-gray-200" %>
+
+        <div class="flex">
+            <%= form.number_field :min_price, placeholder: t(".min_price"), onChange: "this.form.requestSubmit()", value: params[:min_price], class: "w-1/3 rounded-2xl border-gray-200" %>
+            <%= form.number_field :max_price, placeholder: t(".max_price"), onChange: "this.form.requestSubmit()", value: params[:max_price], class: "w-1/3 rounded-2xl border-gray-200 mx-2" %>
+            <%= form.select :order_by, options_for_select(Item::ORDER_BY.keys.map { |order| [t(".#{order}"), order] }, params[:order_by]), {}, { onChange: "this.form.requestSubmit()", class: "w-1/3 rounded-2xl border-gray-200 text-gray-500" } %>
+        </div>
         
     <% end %>
-    <%= link_to t(".all"), items_path %>
-    <%= render partial: "category", collection: @categories %>
-    <%= turbo_frame_tag :items do %>
-        <%= turbo_frame_tag "items-#{@pagy.page}", class: "items" do %>
+
+    <div class="flex overflow-x-scroll gap-2 my-4">
+        <%= link_to t(".all"), items_path, class: "bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300" %>
+        <%= render partial: "category", collection: @categories %>
+    </div>
+
+    <%= turbo_frame_tag :items, class: "flex flex-col m-2" do %>
+        <%= turbo_frame_tag "items-#{@pagy.page}", class: "items flex flex-col w-full sm:flex-row sm:flex-wrap sm:gap-x-2" do %>
             <%= render partial: "item", collection: @items %>
-            <%= turbo_frame_tag "items-#{@pagy.next}", class: "producs", src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+            <%= turbo_frame_tag "items-#{@pagy.next}", class: "items flex flex-col w-full sm:flex-row sm:flex-wrap sm:gap-x-2", src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
         <% end %>
     <% end %>
 <% end %>

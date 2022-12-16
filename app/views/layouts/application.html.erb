@@ -6,15 +6,19 @@
     <%= favicon_link_tag asset_path('eshop.png') %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="bg-blue-50 >
     <%= render "shared/flash" %>
     <%= render "shared/account_data" %>
     <%= render "shared/header" %>
-    <%= yield %>
+
+    <div class="lg:container lg:mx-auto">
+      <%= yield %>
+    </div>
   </body>
 </html>
