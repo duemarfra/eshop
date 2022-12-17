@@ -6,29 +6,44 @@
         </div>
     <% end %>
 
-    <div>
+  <div class="sm:w-1/2 lg:w-1/4 justify-between items-center px-2" >
+
+    <div class="flex flex-col">
         <%= form.label :name %>
-        <%= form.text_field :name %>
+        <%= form.text_field :name, class:"rounded-2xl border-gray-200" %>
     </div>
-    <div>
+
+    <div class="flex flex-col">
         <%= form.label :photo %>
         <%= form.file_field :photo %>
     </div>
-    <div>
+    
+    <div class="flex flex-col">
         <%= form.label :description %>
-        <%= form.text_area :description %>
+        <%= form.text_area :description, class:"rounded-2xl border-gray-200" %>
     </div>
 
-    <div>
+    <div class="flex flex-col">
         <%= form.label :price %>
-        <%= form.number_field :price %>
+        <%= form.number_field :price, class:"rounded-2xl border-gray-200" %>
     </div>
 
-    <div>
+    <div class="flex flex-col">
         <%= form.label :category_id %>
-        <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
+        <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, class: "rounded-2xl border-gray-200" %>
     </div>
 
-    <%= form.submit %>
+   <button class="w-full bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300 my-2" >
+      <%= form.submit %>
+    </button>
+
+  </div>
 
 <% end %>
+
+
+
+
+
+
+

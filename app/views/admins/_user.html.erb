@@ -1,5 +1,7 @@
-<%= link_to admin_path(user) do %>
+<div class="grid justify-items-center">
+    <%= link_to admin_path(user) do %>
 
-    <h3><%= user.username %></h3>
+        <button class="w-full bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300 my-2"><%= user.username %></button>
     
-<% end %>
+    <% end %>
+</div>

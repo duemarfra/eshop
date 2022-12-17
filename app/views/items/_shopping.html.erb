@@ -1,4 +1,4 @@
-<div id="shopping">
+<div id="shopping" class="text-center m-2 bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300">
     <% if item.shopping %>
     <%= link_to "❌", shopping_path(item.id), data: {
                                                turbo_method: :delete,

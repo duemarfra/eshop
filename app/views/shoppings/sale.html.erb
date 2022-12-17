@@ -1,5 +1,24 @@
-<h3><%= t(".title") %></h3>
+<h2><%= t(".title") %></h2>
 
-<% @sales.map { |sale| %>
-    <%= sale %> <br>
-<% } %>
+    <table class="table-auto">
+
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            
+        <% @sales.map { |sale| %>
+            <tr>
+                <td><%= sale[1] %></td>
+                <td>$ <%= sale[0] %></td>
+                <td><%= sale[2] %></td>
+            </tr>
+        <% } %>
+
+        </tbody>
+    </table>

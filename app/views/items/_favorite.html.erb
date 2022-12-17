@@ -1,8 +1,11 @@
-<div id="favorite">
+<div id="favorite" class="text-center m-2 bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300">
     <% if item.favorite %>
-    <%= link_to "❤️", favorite_path(item.id), data: {
+    <div class="animate-bounce">
+      <%= link_to "❤️", favorite_path(item.id), data: {
                                                 turbo_method: :delete,
                                               } if Current.user&.customer? %>
+    </div>
+    
     <% else %>
     <%= link_to "🖤", favorites_path(item_id: item.id), data: {
                                                          turbo_method: :post,

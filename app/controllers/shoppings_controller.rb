@@ -37,13 +37,28 @@ class ShoppingsController < ApplicationController
   end
 
   def saleds
+
     @sales = []
     @shoppings = Shopping.all
+
     @shoppings.map { |shopping|
+
+      @sale = []
+
       if shopping.item.user_id == Current.user.id
-        @sales << shopping.item.name
+
+        if shopping.item.user_id == Current.user.id
+          @sale << shopping.item.price
+          @sale << shopping.item.name
+          @sale << shopping.user.username
+        end
+
+        @sales << @sale
+
       end
+
     }
+
     @sales
   end
 end

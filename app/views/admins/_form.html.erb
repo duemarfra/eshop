@@ -6,40 +6,41 @@
         </div>
     <% end %>
 
-  <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
-  </div>
+    <div class="sm:w-1/2 lg:w-1/4 justify-between items-center px-2">
 
-  <div>
-    <%= form.label :username %>
-    <%= form.text_field :username %>
-  </div>
+      <div class="flex flex-col" >
+        <%= form.label :email %>
+        <%= form.email_field :email, class:"rounded-2xl border-gray-200" %>
+      </div>
 
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
+      <div class="flex flex-col" >
+        <%= form.label :username %>
+        <%= form.text_field :username, class:"rounded-2xl border-gray-200" %>
+      </div>
 
-    <div>
-    <%= form.label :admin %>
-    <%= form.select :admin, ["true", "false"] %>
-  </div>
+      <div class="flex flex-col" >
+        <%= form.label :password %>
+        <%= form.password_field :password, class:"rounded-2xl border-gray-200" %>
+      </div>
 
-      <div>
-    <%= form.label :business %>
-    <%= form.select :business, ["true", "false"] %>
+      <div class="flex flex-col" >
+        <%= form.label :admin %>
+        <%= form.select :admin, ["true", "false"], class:"rounded-2xl border-gray-200" %>
+      </div>
 
-  </div>
+      <div class="flex flex-col" >
+        <%= form.label :business %>
+        <%= form.select :business, ["true", "false"], class:"rounded-2xl border-gray-200" %>
+      </div class="flex flex-col" >
 
-      <div>
-    <%= form.label :customer %>
-    <%= form.select :customer, ["true", "false"] %>
+      <div class="flex flex-col">
+        <%= form.label :customer %>
+        <%= form.select :customer, ["true", "false"], class:"rounded-2xl border-gray-200" %>
+      </div>
+      
+      <button class="w-full bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300 my-2" >
+        <%= form.submit %>
+      </button>
 
-  </div>
-  
-
-  <div>
-    <%= form.submit %>
-  </div>
+    </div>
 <% end %>

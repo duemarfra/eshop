@@ -1,7 +1,7 @@
-<h1><%= t(".title") %></h1>
+<h2><%= t(".title") %></h2>
 
 <%= render "form", category: @category %>
 
 <div>
-  <%= link_to t("common.back"), categories_path %>
+  <%= link_to t("common.back"), categories_path, class:"w-full bg-green-300 text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300 my-2" %>
 </div>

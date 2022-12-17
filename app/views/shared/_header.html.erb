@@ -1,10 +1,10 @@
-<div class="bg-white flex justify-content-between items-center px-2" data-controller="menu">
+<div class="bg-white flex justify-between items-center px-2" data-controller="menu">
 
   <%= link_to items_path do %>
       <h1 class="animate-bounce text-2xl font-bold text-teal-400"><%= t("app_name") %></h1>
   <% end %>
 
-  <button class="sm:hidden" data-action="click->menu#toggle" ><%= image_tag "icons/menu.svg", wigth: 35, height: 35 %></button>
+  <button class="sm:hidden" data-action="click->menu#toggle" ><%= image_tag "icons/menu.svg", width: 35, height: 35 %></button>
   
   <div class="hidden sm:block" >
     <%= render partial: 'shared/items' %>
@@ -12,7 +12,7 @@
 
   <div class="gap-4 sm:hidden absolute bg-white top-0 right-0 shadow z-10 h-full flex flex-col min-w-[15%] overflow-y-scroll ease-in-out duration-200 p-5 translate-x-full" data-menu-target="items" >
 
-    <button class="mb-4" data-action="click->menu#toggle" ><%= image_tag "icons/close.svg", wigth: 35, height: 35 %></button>
+    <button class="mb-4" data-action="click->menu#toggle" ><%= image_tag "icons/close.svg", width: 35, height: 35 %></button>
 
     <%= render partial: "shared/items" %>
   </div>

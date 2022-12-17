@@ -36,8 +36,9 @@ es:
     not_logged_in: 'Tienes que iniciar secion o crearte una cuenta'
     not_authorized: 'Acceso denegado! No tienes permisos para realizar esta accion.'
     not_found: 'Usuario no encontrado!'
-    buy: 'comprar este producto?'
-    unbuy: 'cancelar comprar?'
+    buy: 'Comprar este producto?'
+    unbuy: 'Cancelar comprar?'
+    items_by: 'Artículos publicados por'
 
   shared:
     header:

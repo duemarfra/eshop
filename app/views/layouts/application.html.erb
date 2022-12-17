@@ -15,10 +15,15 @@
   <body class="bg-blue-50 >
     <%= render "shared/flash" %>
     <%= render "shared/account_data" %>
-    <%= render "shared/header" %>
+
+    <div class="bg-white flex justify-between items-center px-2" data-controller="menu">
+      <%= render "shared/header" %>
+    </div>
 
     <div class="lg:container lg:mx-auto">
-      <%= yield %>
+      <div class="lg:container lg:mx-auto">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>

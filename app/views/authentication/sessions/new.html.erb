@@ -1,16 +1,18 @@
 <%= form_with(url: sessions_path) do |form| %>
 
-  <div>
-    <%= form.label :login %>
-    <%= form.email_field :login, required: true %>
-  </div>
+  <div class="sm:w-1/2 lg:w-1/4 justify-between items-center px-2" >
+    <div class="flex flex-col" >
+      <%= form.label :login, "User" %>
+      <%= form.email_field :login, required: true, class: "sm-full my-2 rounded-2xl border-gray-200" %>
+    </div>
 
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password, required: true %>
-  </div>
+    <div class="flex flex-col" >
+      <%= form.label :password %>
+      <%= form.password_field :password, required: true, class: "sm-full my-2 rounded-2xl border-gray-200" %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <button class="w-full bg-white text-gray-600 px-4 py-2 rounded-2xl drop-shadow-sm hover:bg-gray-300" >
+      <%= form.submit "Login" %>
+    </button>
   </div>
 <% end %>
