@@ -39,6 +39,9 @@ en:
     buy: 'Buy this product?'
     unbuy: 'Cancel buy?'
     items_by: 'Items published by'
+    account_admin: 'Admin account'
+    account_business: 'Business account'
+    account_customer: 'Customer account'
 
   shared:
     header:
@@ -125,3 +128,6 @@ en:
       delete: 'Delete'
     edit:
       title: 'Edit user'
+    update:
+      updated: 'User was updated successfully'
+      destroyed: 'User was deleted successfully'

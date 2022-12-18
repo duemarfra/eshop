@@ -12,6 +12,8 @@ It is also a mecaris ruby on rails bootcamp assignment, more details of the assi
 
 * Database creation: "postgres"
 
+* Used Tailwind css for styless
+
 * Lenguage support: English, Spanish
 
 View Gemfile for more details the project

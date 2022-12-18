@@ -12,18 +12,14 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-blue-50 >
-    <%= render "shared/flash" %>
-    <%= render "shared/account_data" %>
+  <body class="bg-blue-50" >
 
-    <div class="bg-white flex justify-between items-center px-2" data-controller="menu">
-      <%= render "shared/header" %>
-    </div>
+    <%= render "shared/flash" %>
+    <%= render "shared/header" %>
 
     <div class="lg:container lg:mx-auto">
-      <div class="lg:container lg:mx-auto">
-        <%= yield %>
-      </div>
+      <%= yield %>
     </div>
+    
   </body>
 </html>

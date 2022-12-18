@@ -1,6 +1,4 @@
-<div>
-    <p><%= "username: " if Current.user %><%= Current.user.username if Current.user %></p>
-    <p><%= "admin: " if Current.user&.admin? %><%= Current.user.admin if Current.user&.admin? %></p>
-    <p><%= "business: " if Current.user&.business? %><%= Current.user.business if Current.user&.business? %></p>
-    <p><%= "customer: " if Current.user&.customer? %><%= Current.user.customer if Current.user&.customer? %></p>
-</div>
+<p class="mx-2 font-bold text-teal-200 font-bolt text-right" > <%= Current.user.username if Current.user %></p>
+<p class="mx-2 font-bold text-teal-200 font-bolt text-right" > <%= t("common.account_admin") if Current.user&.admin? %><% Current.user.admin if Current.user&.admin? %></p>
+<p class="mx-2 font-bold text-teal-200 font-bolt text-right" > <%= t("common.account_business") if Current.user&.business? %><% Current.user.business if Current.user&.business? %></p>
+<p class="mx-2 font-bold text-teal-200 font-bolt text-right" > <%= t("common.account_customer") if Current.user&.customer? %><% Current.user.customer if Current.user&.customer? %></p>

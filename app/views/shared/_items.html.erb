@@ -1,3 +1,4 @@
+<%= render partial: "shared/account_data" %>
 <%= link_to t(".add"), new_item_path, class:"mx-2 text-teal-500 font-bolt" if Current.user&.business? %>
 <%= link_to t(".my_items"), user_path(Current.user.username), class:"mx-2 text-teal-500 font-bolt" if Current.user&.business? %>
 <%= link_to t(".favorites"), favorites_path, class:"mx-2 text-teal-500 font-bolt" if Current.user&.customer? %>

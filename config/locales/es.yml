@@ -39,6 +39,9 @@ es:
     buy: 'Comprar este producto?'
     unbuy: 'Cancelar comprar?'
     items_by: 'Artículos publicados por'
+    account_admin: 'Cuenta de Administrador'
+    account_business: 'Cuenta de Empresa'
+    account_customer: 'Cuenta de Cliente'
 
   shared:
     header:
@@ -124,3 +127,6 @@ es:
       delete: 'Eliminar'
     edit:
       title: 'Editar usuario'
+    update:
+      updated: 'Usuario actualizada correctamente'
+      destroyed: 'Usuario eliminado correctamente'
