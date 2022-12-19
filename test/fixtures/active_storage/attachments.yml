@@ -1,0 +1,144 @@
+ps5_photo:
+  name: photo
+  record: ps5 (Item)
+  blob: ps5_photo_blob
+
+s22_photo:
+  name: photo
+  record: s22 (Item)
+  blob: s22_photo_blob
+
+s23_photo:
+  name: photo
+  record: s23 (Item)
+  blob: s23_photo_blob
+
+psp_photo:
+  name: photo
+  record: psp (Item)
+  blob: psp_photo_blob
+
+megadrive_photo:
+  name: photo
+  record: megadrive (Item)
+  blob: megadrive_photo_blob
+
+ps4_photo:
+  name: photo
+  record: ps4 (Item)
+  blob: ps4_photo_blob
+
+switch_photo:
+  name: photo
+  record: switch (Item)
+  blob: switch_photo_blob
+
+nintendo64_photo:
+  name: photo
+  record: nintendo64 (Item)
+  blob: nintendo64_photo_blob
+
+# driver2_photo:
+#   name: photo
+#   record: driver2 (Item)
+#   blob: driver2_photo_blob
+
+gameboy_photo:
+  name: photo
+  record: gameboy (Item)
+  blob: gameboy_photo_blob
+
+air_photo:
+  name: photo
+  record: air (Item)
+  blob: air_photo_blob
+
+imac_photo:
+  name: photo
+  record: imac (Item)
+  blob: imac_photo_blob
+
+ryzen_photo:
+  name: photo
+  record: ryzen (Item)
+  blob: ryzen_photo_blob
+
+nvidia_photo:
+  name: photo
+  record: nvidia (Item)
+  blob: nvidia_photo_blob
+
+ram_photo:
+  name: photo
+  record: ram (Item)
+  blob: ram_photo_blob
+
+renault_photo:
+  name: photo
+  record: renault (Item)
+  blob: renault_photo_blob
+
+seat_photo:
+  name: photo
+  record: seat (Item)
+  blob: seat_photo_blob
+
+michael_photo:
+  name: photo
+  record: michael (Item)
+  blob: michael_photo_blob
+
+queen_photo:
+  name: photo
+  record: queen (Item)
+  blob: queen_photo_blob
+
+tv_photo:
+  name: photo
+  record: tv (Item)
+  blob: tv_photo_blob
+
+# kindle_photo:
+#   name: photo
+#   record: kindle (Item)
+#   blob: kindle_photo_blob
+
+ipod_photo:
+  name: photo
+  record: ipod (Item)
+  blob: ipod_photo_blob
+
+harry_photo:
+  name: photo
+  record: harry (Item)
+  blob: harry_photo_blob
+
+hobbit_photo:
+  name: photo
+  record: hobbit (Item)
+  blob: hobbit_photo_blob
+
+iphone_photo:
+  name: photo
+  record: iphone (Item)
+  blob: iphone_photo_blob
+
+# pixel_photo:
+#   name: photo
+#   record: pixel (Item)
+#   blob: pixel_photo_blob
+
+surf_photo:
+  name: photo
+  record: surf (Item)
+  blob: surf_photo_blob
+
+tennis_photo:
+  name: photo
+  record: tennis (Item)
+  blob: tennis_photo_blob
+
+skate_photo:
+  name: photo
+  record: skate (Item)
+  blob: skate_photo_blob

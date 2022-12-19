@@ -1,0 +1,55 @@
+s22_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "samsungs22.jpeg", service_name: "test_fixtures" %>
+
+s23_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "samsungs23.jpeg", service_name: "test_fixtures" %>
+
+psp_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "psp.jpg", service_name: "test_fixtures" %>
+
+megadrive_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "segamegadrive.jpg", service_name: "test_fixtures" %>
+
+ps4_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "ps4.jpeg", service_name: "test_fixtures" %>
+
+switch_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "nintendoswith.jpeg", service_name: "test_fixtures" %>
+
+nintendo64_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "nintendo64.webp", service_name: "test_fixtures" %>
+  
+ps5_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "ps5.jpg", service_name: "test_fixtures" %>
+
+gameboy_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "gameboycolor.jpg", service_name: "test_fixtures" %>
+
+air_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "mac.jpg", service_name: "test_fixtures" %>
+
+imac_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "imac27.jpg", service_name: "test_fixtures" %>
+
+ryzen_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "ryzen9.jpg", service_name: "test_fixtures" %>
+
+nvidia_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "3090ti.jpeg", service_name: "test_fixtures" %>
+
+ram_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "ram.webp", service_name: "test_fixtures" %>
+
+renault_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "renaultclio.jpg", service_name: "test_fixtures" %>
+
+seat_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "seatpanda.jpg", service_name: "test_fixtures" %>
+
+michael_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "vinilomikeljackson.jpg", service_name: "test_fixtures" %>
+
+queen_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "viniloqueen.webp", service_name: "test_fixtures" %>
+
+tv_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "tvlg48.jpg", service_name: "test_fixtures" %>
+
+ipod_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "ipodtouch.jpg", service_name: "test_fixtures" %>
+
+harry_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "harrypotter.webp", service_name: "test_fixtures" %>
+
+hobbit_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "hobbit.webp", service_name: "test_fixtures" %>
+
+iphone_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "iphone13.jpg", service_name: "test_fixtures" %>
+
+surf_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "tablasurf.jpg", service_name: "test_fixtures" %>
+
+tennis_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "raqueta.jpg", service_name: "test_fixtures" %>
+
+skate_photo_blob: <%= ActiveStorage::FixtureSet.blob filename: "skateboard.jpg", service_name: "test_fixtures" %>
+
+# driver2_photo_blob: <%# ActiveStorage::FixtureSet.blob filename: ".jpg", service_name: "test_fixtures" %>
+# pixel_photo_blob: <%# ActiveStorage::FixtureSet.blob filename: ".jpg", service_name: "test_fixtures" %>
+# kindle_photo_blob: <%# ActiveStorage::FixtureSet.blob filename: ".jpg", service_name: "test_fixtures" %>
