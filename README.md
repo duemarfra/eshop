@@ -58,7 +58,7 @@ NOTE: ALL NEW USERS HAVE ONLY THE CLIENTS OPTION ENABLED, IF YOU WANT TO TRY AN.
 
         https://eshop-production-f941.up.railway.app/
 
-* Hosted on Fly.io (old version)
+* Hosted on Fly.io (alternative host)
 
         https://eshop-flyio.fly.dev/
 
